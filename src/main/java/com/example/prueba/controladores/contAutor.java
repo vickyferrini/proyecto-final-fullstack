@@ -43,7 +43,7 @@ public class contAutor {
 	@PostMapping("/guardar-autor")
 	public RedirectView guardarAutor(@RequestParam String nombre) throws erroresServicio{
 		svcAutor.crearAutor(nombre, true);
-		return new RedirectView("/autor/ver-todos");	
+		return new RedirectView("ver-todos");	
 	}
 
 	
